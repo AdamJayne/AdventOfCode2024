@@ -10,9 +10,9 @@ pub fn get_puzzle(filename: &str) -> BufReader<File> {
     return reader;
 }
 
-pub fn print_result(answers: Vec<i32>) {
+pub fn print_result(day: i32, answers: Vec<i32>) {
     let sliced = answers.as_slice();
-    println!("Day 1:");
+    println!("Day {:?}:", day);
     println!("    Part1: {}", sliced[0]);
     println!("    Part2: {}", sliced[1]);
     println!("");

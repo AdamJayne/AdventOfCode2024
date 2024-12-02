@@ -7,5 +7,8 @@ fn main() {
     // TODO: Cleanup day running selection, find a better way to do this
     // Day 1
     let day1_result = days::day1::main().expect("Unable to run Day1");
-    print_result(day1_result);
+    print_result(1, day1_result);
+
+    let day2_result: Vec<i32> = days::day2::main().expect("Unable to run Day2");
+    print_result(2, day2_result);
 }
