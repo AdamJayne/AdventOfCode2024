@@ -1,7 +1,7 @@
-use crate::services::puzzle::{self, get_puzzle};
+use crate::services::puzzle::get_puzzle;
 use regex::Regex;
 use std::fs::File;
-use std::io::{self, BufRead, BufReader, Lines};
+use std::io::{self, BufRead, BufReader};
 
 pub fn main() -> io::Result<Vec<i32>> {
     let values: BufReader<File> = get_puzzle("day3");

@@ -18,7 +18,7 @@ pub fn main() -> io::Result<Vec<i32>> {
     let mut results: Vec<i32> = Vec::new();
 
     let part1_result: i32 = part1(entries.clone())?;
-    let part2_result: i32 = part2(entries.clone())?;
+    let part2_result: i32 = part2()?;
 
     results.push(part1_result);
     results.push(part2_result);
@@ -49,7 +49,6 @@ fn part1(entries: Vec<Vec<i32>>) -> io::Result<i32> {
             }
             previous_value = *value;
         }
-        println!("{}, {}, {}", found_no_change, max_decrease, max_increase);
         if !found_no_change
             && ((max_increase <= 3 && max_decrease == 0)
                 || (max_decrease >= -3 && max_increase == 0))
@@ -60,7 +59,6 @@ fn part1(entries: Vec<Vec<i32>>) -> io::Result<i32> {
     Ok(result)
 }
 
-fn part2(entries: Vec<Vec<i32>>) -> io::Result<i32> {
-    let mut result: i32 = 0;
-    Ok(result)
+fn part2() -> io::Result<i32> {
+    Ok(0)
 }
