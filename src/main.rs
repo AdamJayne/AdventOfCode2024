@@ -11,4 +11,7 @@ fn main() {
 
     let day2_result: Vec<i32> = days::day2::main().expect("Unable to run Day2");
     print_result(2, day2_result);
+
+    let day3_result: Vec<i32> = days::day3::main().expect("Unable to run Day3");
+    print_result(3, day3_result);
 }

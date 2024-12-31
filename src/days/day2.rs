@@ -33,6 +33,7 @@ fn part1(entries: Vec<Vec<i32>>) -> io::Result<i32> {
         let mut max_decrease: i32 = 0;
         let mut found_no_change: bool = false;
         let mut previous_value: i32 = -1;
+        // Todo, clean this logic up
         for value in entry.iter() {
             if previous_value == -1 {
                 previous_value = *value;
